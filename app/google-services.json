@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "709151874378",
+    "project_id": "onlineshopmvvm",
+    "storage_bucket": "onlineshopmvvm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:709151874378:android:650910ea1ed32ea037f5b3",
+        "android_client_info": {
+          "package_name": "com.fabiodrneles.onlineshopmvvm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTHbn9l1vFNdVjn9AkOKbt6JS2SlGGly4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
