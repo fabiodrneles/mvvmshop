@@ -11,21 +11,13 @@ import com.fabiodrneles.onlineshopmvvm.R
 import com.fabiodrneles.onlineshopmvvm.databinding.ActivityIntroBinding
 import kotlinx.coroutines.FlowPreview
 
-class IntroActivity : AppCompatActivity() {
+class IntroActivity : BaseActivity() {
 
     private lateinit var binding: ActivityIntroBinding
     override fun onCreate(savedInstanceState: Bundle?) {
-
-        binding = ActivityIntroBinding.inflate(layoutInflater)
-
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+        binding = ActivityIntroBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
 
         binding.startBtn.setOnClickListener {
             startActivity(Intent(this@IntroActivity,MainActivity::class.java))
